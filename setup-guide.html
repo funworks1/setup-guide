@@ -265,8 +265,6 @@
           <li><strong>Excel</strong>　― 表計算・データ管理</li>
           <li><strong>PowerPoint</strong>　― プレゼンテーション</li>
           <li><strong>Outlook (Classic)</strong>　― メール・予定表（手順5で設定）</li>
-          <li><strong>OneNote</strong>　― メモ・ノート</li>
-          <li><strong>Teams</strong>　― ビデオ会議・チャット</li>
           <li><strong>OneDrive</strong>　― クラウドストレージ（手順9で設定）</li>
         </ul>
       </div>
@@ -304,7 +302,7 @@
     <div class="section-body">
       <div class="step">
         <div class="step-title">インストール</div>
-        <p>以下のページから無料版のAcrobat Readerをダウンロードしてインストールします。</p>
+        <p>PDFファイルを開くためのソフトです。以下のページから無料版のAcrobat Readerをダウンロードしてインストールします。</p>
         <a class="btn-link" href="https://get.adobe.com/jp/reader/" target="_blank">Adobe Acrobat Readerダウンロードページ</a>
         <div class="note">ダウンロード時に「オプションソフトウェア」のチェックが入っている場合は外してからインストールしてください。</div>
       </div>
@@ -321,6 +319,7 @@
     <div class="section-body">
       <div class="step">
         <div class="step-title">インストール</div>
+        <p style="margin-bottom:10px;">メールの添付ファイルにパスワードをつけるためのソフトです。</p>
         <a class="btn-link" href="https://forest.watch.impress.co.jp/library/software/lhaplus/" target="_blank">窓の杜 LhaPlusダウンロードページ</a>
         <ol style="margin-top:12px;">
           <li>上のリンクからダウンロードページを開き、インストーラーをダウンロード</li>
@@ -342,7 +341,10 @@
       <div class="step">
         <div class="step-title">Outlook の起動確認</div>
         <p>Office（手順1）をインストールするとOutlookが含まれます。スタートメニューから「<strong>Outlook (Classic)</strong>」を起動してください。</p>
-        <div class="note">📌 現在は <strong>Outlook (Classic) を推奨</strong>しています。新しいOutlookは2029年にClassicを置き換える予定ですが、それまでは会社サーバーへの接続の安定性からClassicをお使いください。</div>
+        <div class="note">📌 現在は <strong>Outlook (Classic) を推奨</strong>しています。<br>
+        当社のメール設定はPOP接続を使用しており、Outlook (New) はPOP接続に正式対応していないため、会社メールアドレスが正常に受信できません。<br><br>
+        ⚠️ PCに <strong>Outlook (New) がインストールされている場合はアンインストールしてください。</strong><br>
+        ※ ご自身のメールアドレスで使用中の方はそのままで構いませんが、会社メールアドレスの設定は必ずOutlook (Classic) で行ってください。</div>
       </div>
       <div class="step">
         <div class="step-title">メールアカウントの設定</div>
@@ -468,20 +470,19 @@
         </div>
       </div>
       <div class="step">
-        <div class="step-title">SharePointからの同期設定</div>
-        <p>会社SharePointのURLを後ほどお送りします。URLが届いたら以下の手順で同期してください。</p>
+        <div class="step-title">会社ワンドライブからの同期設定</div>
+        <p>会社会社ワンドライブのURLを後ほどお送りします。URLが届いたら以下の手順で同期してください。</p>
         <ol style="margin-top:8px;">
-          <li>送付されたSharePointのURLをブラウザで開く</li>
-          <li>ドキュメントライブラリ上部の「⋯」（三点リーダー）をクリック</li>
-          <li>「同期」をクリック</li>
+          <li>送付された会社ワンドライブのURLをブラウザで開く</li>
+          <li>ツールバーに「<strong>同期</strong>」が表示されていればそのままクリック。見当たらない場合は「<strong>…</strong>」（三点リーダー）の中にあります</li>
           <li>「OneDriveを開く」または「許可」のダイアログが表示されたら許可する</li>
           <li>完了するとエクスプローラーにビルマークの会社フォルダが表示される</li>
         </ol>
       </div>
       <div class="note" style="border-left-color: #e03535; background: #fff0f0;">
         ⚠️ <strong>【重要】データ保存に関するルール</strong><br><br>
-        業務で使用するファイルは、必ず<strong>ビルマーク（会社SharePoint）のフォルダ内</strong>に保存・管理してください。<br><br>
-        以下は<strong>厳禁</strong>です：<br>
+        業務で使用するファイルは、必ず<strong>ビルマーク（会社ワンドライブ）のご自身のフルネームフォルダ内</strong>に保存・管理してください。<br><br>
+        以下には保存しないでください：<br>
         ・デスクトップへの保存<br>
         ・ご自宅のPC内（ローカル）への保存<br>
         ・☁️ 雲マーク（個人用OneDrive）への業務データの保存<br><br>
@@ -547,7 +548,7 @@
     <div class="section-body">
       <div class="note" style="border-left-color: #e03535; background: #fff0f0; margin-bottom: 16px;">
         ⚠️ <strong>【重要】PCのセキュリティはご自身の責任で管理してください。</strong><br>
-        自宅PCを業務に使用する以上、セキュリティ対策は必須です。ウイルス感染や情報漏洩が発生した場合、重大なコンプライアンス違反となります。必ず以下を徹底してください。<br><br>
+        必ず以下を徹底してください。<br><br>
         🛡️ セキュリティ対策についてご不安な点がございましたら、会社からマカフィーを提供することも可能です。お気軽にSlackにてご相談ください。
       </div>
       <div class="step">
